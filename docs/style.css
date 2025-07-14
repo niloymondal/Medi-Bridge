@@ -1,0 +1,10 @@
+.custom-bg-card {
+  background-image: 
+    linear-gradient(rgba(17, 17, 17, 0.3), rgba(17, 17, 17, 0.7)),
+    url('./images/reviewervdo.jpg'); /* This is correct */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
