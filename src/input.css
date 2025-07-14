@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+
+@layer base{
+    html {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    scroll-behavior: smooth;
+  }
+
+
+@font-face{
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./assests/fonts/PlusJakartaSans-Regular.ttf") format("TrueType");
+}
+}
+
+@layer components{
+
+  /* Hero Section */
+  .btn1-hero{
+    @apply w-full md:w-auto px-6 py-3 me-5 bg-[#017D6E] text-white rounded-lg hover:bg-[#017d6eec];
+  }
+  .btn2-hero{
+    @apply w-full md:w-auto px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-100;
+  }
+  .card1-img{
+    @apply absolute top-[140px] right-[30px] md:top-[142px] md:right-[320px] w-[354px] h-[143px] p-[15px] rounded-[15px] border border-gray-100 bg-white flex justify-between items-center shadow-sm;
+  }
+  .card2-img{
+    @apply absolute top-[290px] left-[70px] md:top-[350px] md:left-[350px] w-[284px] h-[178px] p-[24px] rounded-[15px] border border-[#34978B] bg-[#017D6E] flex flex-col gap-[22px] shadow-lg;
+  }
+  .card1-btn{
+    @apply text-[14px] border border-[#017D6E] text-[#017D6E] font-semibold px-4 py-2 rounded-full hover:bg-green-50 transition whitespace-nowrap flex gap-1;
+  }
+  .arrow1{
+    @apply absolute bottom-[0px] -left-[10px] md:bottom-[10px] md:left-[100px];
+  }
+  .arrow2{
+    @apply absolute top-[50px] right-[30px] md:top-[100px] md:right-[100px];
+  }
+
+  /* Card Section */
+  .card-style{
+    @apply h-[260px] p-[30px] rounded-[15px] border border-[#9195953D] bg-white flex flex-col items-center gap-[30px] hover:bg-gray-100;
+  }
+  .card-icon{
+    @apply w-12 h-12 flex items-center justify-center bg-[#0F766E] rounded-full;
+  }
+
+  /* Mid Section */
+  .mid-img{
+    @apply w-full max-w-[600px] h-auto rounded-[15px] object-cover;
+  }
+  .badge-img{
+    @apply absolute top-[15px] left-[15px] flex gap-2 rounded-full px-2 py-2 justify-center items-center bg-[#FFFFFF] w-[180px];
+  }
+  .badge-text{
+    @apply inline-flex items-center text-[12px] text-[#101918] leading-[1.6] text-center font-semibold;
+  }
+  .mid-btn{
+    @apply max-w-full w-[260px] h-[67px] flex items-center gap-3 px-[19px] rounded-[15px] border border-[#9195953D] bg-white;
+  }
+  .mid-btn-icon{
+    @apply flex items-center justify-center rounded-full bg-[#007C6D];
+  }
+  .mid-btn-text{
+    @apply text-[#404746] text-[16px] font-medium leading-[1.6];
+  }
+
+  /* Doctors Section */
+  .badge-available{
+    @apply w-full max-w-sm bg-white p-5 flex flex-col items-center gap-5;
+  }
+  .badge-available-text{
+    @apply absolute top-2 left-2 bg-[#E6F2F1] text-[#01594E] text-sm px-4 py-1 rounded-full font-medium;
+  }
+  .doctor-img{
+    @apply w-[388px] h-[375px] object-cover border-2 border-gray-100 rounded-[15px];
+  }
+  .doctor-img-btn{
+    @apply flex items-center gap-1 px-6 py-2 border font-semibold border-[#017D6E] text-[#017D6E] rounded-full hover:bg-green-700 hover:text-white transition;
+  }
+  .doctor-btn{
+    @apply text-[#101918] font-semibold text-[14px] leading-[1.6] text-center bg-[#F9FAFA] border-1 border-gray-100 rounded-[7px] outline-none w-full md:w-auto px-6 py-3 hover:bg-gray-300;
+  }
+
+  /* Testimonial Section */
+  .card-test-style{
+    @apply max-w-full bg-[#F9FAFA] rounded-xl shadow-md p-6;
+  }
+  .play-btn{
+    @apply w-12 h-12 bg-white rounded-full flex items-center justify-center;
+  }
+  .card-test-btn{
+    @apply text-[#101918] font-semibold text-[14px] leading-[1.6] text-center bg-[#F9FAFA] border-1 border-gray-100 rounded-[7px] outline-none w-full md:w-auto px-6 py-3 hover:bg-gray-300;
+  }
+
+  /* FAQ Section */
+  .faq-btn{
+    @apply text-[#101918] font-semibold text-[14px] leading-[1.6] text-center bg-[#F9FAFA] border-1 border-gray-100 rounded-[7px] outline-none w-full md:w-auto px-6 py-3 hover:bg-gray-300;
+  }
+  .accordion-style1{
+    @apply rounded-[15px] border border-gray-300 overflow-hidden; 
+  }
+  .accordion-style2{
+    @apply bg-white text-[#101918] text-[22px] leading-[1.4] font-semibold px-6 py-4 cursor-pointer select-none list-none flex justify-between items-center;
+  }
+
+  /* Pre-end Section */
+  .pre-btn{
+    @apply text-[#101918] font-semibold text-[14px] leading-[1.6] text-center bg-[#F9FAFA] border-1 border-gray-100 rounded-[7px] outline-none w-full md:w-auto px-6 py-3 hover:bg-gray-300 mb-8;
+  }
+  .pre-img1{
+    @apply absolute -top-5 -left-[200px] md:top-0 md:-left-0 rounded-[15px];
+  }
+  .pre-img2{
+    @apply absolute bottom-0 -right-[200px] md:bottom-0 md:-right-0 rounded-[15px];
+  }
+
+  /* Footer Section */
+  .footer-style{
+    @apply text-[#5F6564] text-[14px] font-normal leading-[1.6] hover:text-gray-400;
+  }
+  .footer-end{
+    @apply text-gray-400 text-[14px] font-normal leading-[1.6] hover:text-gray-500;
+  }
+} 
+
+:root {
+  --font-jakarta: "Plus Jakarta Sans", sans-serif;
+}
