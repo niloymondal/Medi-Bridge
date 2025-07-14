@@ -4,7 +4,7 @@
 
     "dev": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
 
-    "build:css": "tailwindcss -i ./src/input.css -o ./src/output.css --minify"
+    "build:css": "chmod +x ./node_modules/.bin/tailwindcss && tailwindcss -i ./src/input.css -o ./src/output.css --minify"
 
   },
 
