@@ -8,3 +8,9 @@
 
 }
 
+.custom-banner{
+   background-image: url('./images/Banner.png'); /* This is correct */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
